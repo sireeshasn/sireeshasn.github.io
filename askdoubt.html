@@ -1,0 +1,123 @@
+<DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ask you doubt</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="FaviconIcon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut" href="favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width",initial-scale=1,shrink-to-fit=no">
+<meta name="name" content="Srkr buddy">
+<meta name="robots" content="noindex,nofollow">
+<style>
+body{
+background:url(helping-friends.jpg);
+background-size:cover;
+color:#FFA500;
+font-family:sans-serif;
+font-size:20px;
+}
+*{
+box-sizing:border-box;
+}
+a{
+text-decoration:none;
+color:#73c2fb;
+}
+textarea,select,#subject{
+width:100%;
+padding:12px;
+border:1 px solid #FFA500;
+resize:vertical;
+border-radius:5px;
+outline:none;
+background:transparent;
+color:white;
+size:20px;
+}
+textarea:focus {
+border: 3px solid  #73c2fb;
+}
+label{
+padding:10px 10px 10px 0;
+display:inline-block;
+}
+input[type=submit]{
+  background-color: #73c2fb;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: center;
+}
+input[type=submit]{
+  background-color: #FFA500;
+  outline:none;
+  }
+#box{
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.7);
+  padding: 20px;
+  position:center;
+  text-align:left;
+  border-bottom:1 px #73c2fb;
+}
+#ask{
+width:100%;
+padding:12px;
+border:1 px solid #FFA500;
+resize:vertical;
+border-radius:5px;
+outline:none;
+background:transparent;
+color:white;
+}
+#subject,#ask
+{
+width: 25%;
+margin-top: 6px;
+color:white;
+border:1 px solid #FFA500;
+}
+select{
+color:white;
+background:transparent;
+size:20px;
+}
+</style>
+<body>
+<form>
+<div id="box">
+<h1 style="color:#73c2fb">Post your Doubt here...</h1>
+<a href="srkrbuddy.html"><i class="fa fa-home"></i>Home</a>
+<div>
+<label>Subject</label>
+<select id="subject">
+<option value="ECE" color="black">ECE</option>
+<option value="CSE"color="black">CSE</option>
+<option value="EEE"color="black">EEE</option>
+<option value="CIV"color="black">CIV</option>
+<option value="MECH"color="black">MECH</option>
+<option value="IT"color="black">IT</option>
+<option value="General"color="black">General</option>
+</select>
+</div>
+<div>
+<label>Let us know your query</label>
+<textarea id="sub"rows="10" cols="100"id="ask" name="required" color="white" maxlength="500"></textarea>
+</div>
+<div>
+<label for="img">Select file:</label>
+  <input type="file" id="img" name="img"accept="audio/*,video/*,image/*,media_type/*"aria-label="File browser example">
+</div>
+<br></br>
+<div>
+<input type="submit" id="submit">
+</div>
+</form>
+</div>
+</body>
+</head>
+</html>
