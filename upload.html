@@ -1,0 +1,130 @@
+<DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Upload</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="FaviconIcon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut" href="favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width",initial-scale=1,shrink-to-fit=no">
+<meta name="name" content="Srkr buddy">
+<meta name="robots" content="noindex,nofollow">
+<style>
+body{
+background-image:url(camera1.jpg);
+background-size:cover;
+color:#73c2fb;
+font-family:sans-serif;
+font-size:20px;
+}
+*{
+box-sizing:border-box;
+background:transparent;
+}
+a{
+text-decoration:none;
+color:#FFA500;
+}
+textarea select #sub{
+width:100%;
+padding:12px;
+border:1 px solid #FFA500;
+resize:vertical;
+border-radius:5px;
+outline:none;
+background:transparent;
+color:white;
+size:20px;
+}
+textarea:focus {
+border: 3px solid  #73c2fb;
+}
+label{
+padding:10px 10px 10px 0;
+display:inline-block;
+background:transparent;
+}
+input[type=submit] {
+  background-color: #73c2fb;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: center;
+}
+input[type=submit]:hover {
+  background-color: #FFA500;
+  outline:none;
+}
+#box{
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.6);
+  padding: 20px;
+  position:center;
+  text-align:left;
+  border-bottom:1 px #73c2fb;
+}
+#sub,#branch,#year
+{
+width: 75%;
+margin-top: 6px;
+color:#fff;
+border:1 px solid #73c2fb;
+float:right;
+}
+select{
+color:white;
+background:transparent;
+size:20px;
+}
+img{
+float:left;
+}
+</style>
+<body>
+<div id="box">
+<form>
+<h1 style="color:#FFA500">Upload your snap</h1>
+<div>
+<a href="srkrbuddy.html"><i class="fa fa-home"></i>Home</a>
+<br></br>
+<label for="img">Select file:</label>
+  <input type="file" id="img" name="img"accept="audio/*,video/*,image/*,media_type/*"aria-label="File browser example">
+</div>
+<div>
+<label>Description</label>
+<textarea id="sub"rows="2" cols="30"id="suggest" name="required" color="white" maxlength="200"></textarea>
+</div>
+<div>
+<label>Name</label>
+<textarea id="sub"rows="2" cols="15"id="suggest" name="required" color="white" maxlength="50"></textarea>
+</div>
+<div>
+<label>Branch</label>
+<select id="branch">
+<option value="ECE">ECE</option>
+<option value="CSE">CSE</option>
+<option value="EEE">EEE</option>
+<option value="CIV">CIV</option>
+<option value="MECH">MECH</option>
+<option value="IT">IT</option>
+</select>
+</div>
+<div>
+<label>Year</label>
+<select id="year">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select>
+</div>
+<br></br>
+<input type="submit" id="submit">
+</head>
+</form>
+</div>
+</body>
+</html>
