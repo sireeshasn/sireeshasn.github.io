@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SRKR STUDENT PAL</title>
+<title>SRKR STUDENT BUDDY</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="FaviconIcon" href="favicon.ico" type="image/x-icon">
-<link rel="shortcut" href="favicon.ico" type="image/x-icon">
+<link rel="FaviconIcon" href="https://sireeshasn.github.io/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut" href="https://sireeshasn.github.io/images/favicon.ico" type="image/x-icon">
 <meta name="viewport" content="width=device-width",initial-scale=1,shrink-to-fit=no">
 <meta name="name" content="Srkr buddy">
 <meta name="robots" content="noindex,nofollow">
@@ -22,7 +22,7 @@ font-size:25px;
 }
 h1{
 color:#ff6700;
-font-size:50px;
+font-size:45px;
 font-style:lucida;
 background-image:linear-gradient(to right,rgba(0,0,0,0.7), #73c2fb);
 margin-top:0px;
@@ -31,7 +31,7 @@ height:120px;
 text-align:auto;
 position:relative;
 padding-top:35px;
-padding-left:10px;
+padding-left:0px;
 padding-right:0px;
 }
 #signuplink,#loginlink{
@@ -42,7 +42,7 @@ padding-right:0px;
 }
 #signupbutton {
   float:right;
-  display: inline-block;
+  display: inline-flex;
   padding-top: 10px;
   padding-bottom:15px;
   font-size: 15px;
@@ -93,7 +93,7 @@ li.dropdown {
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: relative;
   background-color: rgba(0,0,0,0.7);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
@@ -116,46 +116,30 @@ li.dropdown {
 [class*="col-"] {
   float:left;
   padding: 20px;
+width:100%;
 }
-/* For desktop: */
-.col-1 {width: 100%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 100%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 14%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-.head   {width:100%;}
-
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
   /* For mobile phones: */
-    width:auto;
-	h1{
-	font-size:35px;
-	}
-	.col-3{
-	font-size:10px;
-	}
-	.col-6{
-	font-size:10px;
-	text-align:left;
-	}
+
+	.col-s-1{width:100%;}
+	.col-s-3{width:100%;}
+	.col-s-6{width:100%;}
 	#signupbutton{
 	font-size:15px;
-	display:inline-block;
+	display:inline-flex;
 	text-align:center;
 	padding:0px 5px 0px 0px;
 	position:absolute;
-	left:200px;
+	left:0px;
 	top:0px;
-	font-family:sans-serif;
+	font-family:serif;
 	}
 }
+/* For desktop: */
+.col-1 {width: 100%;}
+.col-3 {width: 100%;}
+.col-6 {width: 14%;}
+
 </style>
 </head>
 <body>
