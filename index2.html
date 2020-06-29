@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SRKR STUDENT PAL</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="FaviconIcon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut" href="favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width",initial-scale=1.0,shrink-to-fit=no">
+<meta name="name" content="Srkr buddy">
+<meta name="robots" content="noindex,nofollow">
+<style>
+body{
+background-image:url(https://sireeshasn.github.io/images/341.JPG);
+background-attachment: fixed;
+background-size: cover;
+background-position:center;
+font-family:serif;
+font-size:25px;
+}
+
+h1{
+color:#ff6700;
+font-size:45px;
+font-style:lucida;
+background-image:linear-gradient(to right,rgba(0,0,0,0.7), #73c2fb);
+margin-top:0px;
+margin-bottom:5px;
+height:120px;
+text-align:auto;
+position:relative;
+padding-top:35px;
+padding-left:0px;
+padding-right:0px;
+}
+#signuplink,#loginlink{
+	float:right;
+	text-decoration:none;
+	font-style:lucida;
+	color:#ff6700;
+}
+#signupbutton {
+  float:right;
+  display: inline-flex;
+  padding-top: 10px;
+  padding-bottom:15px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: right;
+  text-decoration: none;
+  outline: none;
+  color:rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.7);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px #ff6700;
+}
+
+#signupbutton:hover {background-color: rgba(0,0,0,0.7)}
+#signupbutton:active {
+  background-color: #73c2fb;
+  box-shadow: 0 5px #ff6700;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgba(0,0,0,0.7);
+}
+
+li {
+  float: left;
+  color:#73c2fb;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: #73c2fb;;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color:rgba(0,0,0,0.7);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: rgba(0,0,0,0.7);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #ff6700;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color:#73c2fb;}
+
+.dropdown:hover .dropdown-content {
+  display:block;
+}
+[class*="col-"] {
+  float:left;
+  padding: 0px;
+  width:100%;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+    .col-s-1{width:100%;}
+    .col-s-3{width:100%;}
+	.col-s-6{width:100%;}
+	#signupbutton{
+	font-size:15px;
+	display:inline-block;
+	text-align:center;
+	padding:0px 5px 0px 0px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:serif;
+   
+	}
+}
+/* For desktop: */
+.col-1 {width: 100%;}
+.col-3 {width: 100%;}
+.col-6 {width: 15%;}
+
+
+</style>
+</head>
+<body>
+<div class="col-1">
+<h1>
+
+<img src="https://sireeshasn.github.io/images/srkrlogo.JPG"width="30" height="30">
+SRKR STUDENT BUDDY
+
+<aside>
+<button class="col-6"id="signupbutton">
+<a href="signup.html" target="_blank" id="signuplink">Sign up</a>
+<span style="float:right">|</span>
+<a href="login.html" target="_blank" id="loginlink">Log in</a>
+</button>
+</aside>
+
+</h1>
+</div>
+<div class="col-3">
+<ul>
+  <li><a href="#home" target="_blank"><i class="fa fa-home"></i>Home</a></li>
+  <li><a href="sugbox.html" target="_blank"><i class="fa fa-lightbulb-o"></i>Suggestion Box</a></li>
+  <li><a href="askdoubt.html" target="_blank"><i class="fa fa-question"></i>Ask Your Doubt</a></li>
+  <li class="dropdown">
+    <a class="dropbtn"target="_blank"><i class="fa fa-image"></i>Gallery</a>
+    <div class="dropdown-content">
+      <a href="upload.html"target="_blank">Upload</a>
+      <a href="gallery.html"target="_blank">Visit</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a class="dropbtn" target="_blank"><i class="fa fa-globe"></i>Explore</a>
+    <div class="dropdown-content">
+      <a href="projects.html"target="_blank">Projects</a>
+      <a href="intern.html"target="_blank">Internships</a>
+    </div>
+  </li>
+  <li><a href="contact.html" target="_blank"><i class="fa fa-phone"></i>Contact</a></li>
+</ul>
+</div>
+</body>
+</html>
