@@ -114,6 +114,23 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display:block;
 }
+.move{
+width:300px;
+margin:20px auto;
+box-shadow:1px 1px 10px 2px #333
+border-radius:5px;
+overflow:hidden;
+color:#ff6700;
+background:rgba(0,0,0,0.7);
+padding:4px;
+height:300px;
+}
+.mobj{
+text-align:center;
+padding:5px;
+text-decoration:none;
+color:#ff6700
+}
 [class*="col-"] {
   float:left;
   padding: 0px;
@@ -182,6 +199,17 @@ SRKR FOLKS
   </li>
   <li><a href="contact.html" target="_blank"><i class="fa fa-phone"></i>Contact</a></li>
 </ul>
+</div>
+								   <div class="content"> 
+<marquee behavior="scroll" direction="up" scrollamount="4"class="move"
+onmouseover="this.setAttribute('scrollamount',0,0);this.stop()"
+onmouseout="this.setAttribute('scrollamount',4,0);this.start()">
+<script> 
+for(var i=1;i<=5;i++){
+document.write('<a class="mobj" href=""><br></br>Notification : '+i+'</a>')
+}
+</script>
+</marquee>
 </div>
 </body>
 </html>
