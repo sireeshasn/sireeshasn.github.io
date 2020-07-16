@@ -115,16 +115,35 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display:block;
 }
+#block2{
+display:inline-flex;
+margin-top:10px;
+}
 .move{
 width:300px;
 margin:20px auto;
-box-shadow:1px 1px 10px 2px #333
+padding: 10px 50px 50px 50px;
 border-radius:5px;
 overflow:hidden;
 color:#ff6700;
 background:rgba(0,0,0,0.7);
+padding-top:20px;
 padding:4px;
-height:200px;
+height:350px;
+}
+.quiz{
+    width: 600px;
+	margin: 20px auto;
+	overflow:hidden;
+    height: 350px;
+    padding: 10px 50px 50px 50px;
+	border-radius:5px;
+	overflow:hidden;
+    background-color:rgba(0,0,0,0.7) ;
+	float:right;
+	margin-top:0px;
+	padding-top:20px;
+    padding-left:100px;
 }
 .mobj{
 font-size:12px;
@@ -133,11 +152,59 @@ padding:5px;
 text-decoration:none;
 color:#ff6700
 }
+.quiz h4 {
+width:50%;
+    font-family: "sans-serif";
+    font-size: 30px;
+    text-align: center;
+    color: #73c2fb ;
+    padding: 2px 0px;
+    
+}
+#score {
+    color:#73c2fb;
+    text-align: center;
+    font-size: 30px;
+}
+
+.quiz #question {
+    font-family: "monospace";
+    font-size: 20px;
+    color:#ff6700 ;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+#btn0, #btn1, #btn2, #btn3 {
+    background-color: #01BBFF;
+    width: 100px;
+    font-size: 15px;
+    color: #fff;
+    border: 1px solid #1D3C6A;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+}
+
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+    cursor: pointer;
+    background-color:#ff6700 ;
+}
+
+#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+    outline: 0;
+}
+
+#progress {
+    color: #ff6700;
+    font-size: 18px;
+}
 [class*="col-"] {
   float:left;
   padding: 0px;
   width:100%;
-}
+}	      
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
     .col-s-1{width:100%;}
@@ -182,6 +249,29 @@ background:rgba(0,0,0,0.7);
 padding:0px;
 height:200px;
 }
+#signupbutton{
+	font-size:15px;
+	display:inline-block;
+	text-align:center;
+	padding:0px 5px 0px 0px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:serif;
+   }
+   #block2{
+   display:inline-flex;
+   width:100%;
+   }
+   .move{
+   width:50%;
+   }
+   .quiz{
+   padding:0px;
+   width:100%;
+   height:500px;
+   text-align:center;
+   }	      
 }
 /* For desktop: */
 .col-1 {width: 100%;}
@@ -230,6 +320,7 @@ SRKR FOLKS
   <li><a href="contact.html" target="_blank"><i class="fa fa-phone"></i>Contact</a></li>
 </ul>
 </div>
+<div id=block2>
 <div class="content"> 
 <marquee behavior="scroll" direction="up" scrollamount="4"class="move"
 onmouseover="this.setAttribute('scrollamount',0,0);this.stop()"
@@ -240,6 +331,27 @@ document.write('<a class="mobj" href=""><br></br>Notification : '+i+'</a>')
 }
 </script>
 </marquee>
+</div>
+</div>
+<br></br>
+<div class="quiz">
+<h4>Today's Quiz</h4>
+            <hr style="margin-bottom: 20px">
+ 
+            <p id="question"></p>
+ 
+            <div class="buttons">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+                <button id="btn3"><span id="choice3"></span></button>
+            </div>
+			<hr style="margin-top: 50px">
+            <footer>
+                <p id="progress">Question x of y</p>
+            </footer>
+		<script src="quiz.js"></script>	
+</div>
 </div>
 </body>
 </html>
